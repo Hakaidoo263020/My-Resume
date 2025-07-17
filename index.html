@@ -1,183 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Resume - Aldous Arvin F. Ngo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>My Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: #f5f7fa;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
       color: #333;
       line-height: 1.6;
-      padding: 2rem;
     }
-
     .container {
       max-width: 900px;
       margin: auto;
-      background: #fff;
-      padding: 2rem;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
+      padding: 20px;
     }
-
-    h1, h2 {
-      color: #2c3e50;
-    }
-
-    h1 {
-      font-size: 2rem;
+    .hero {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: #fff;
+      padding: 60px 20px;
       text-align: center;
-      margin-bottom: 1rem;
+      border-bottom: 5px solid #023e8a;
     }
-
-    img {
-      display: block;
-      margin: 0 auto 1.5rem;
-      border-radius: 50%;
-      border: 4px solid #3498db;
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
     }
-
-    hr {
-      border: 1px solid #ccc;
-      margin: 1.5rem 0;
+    .hero .subtitle {
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
-
-    p, li {
+    main section {
+      background: white;
+      padding: 30px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    main section h2 {
+      color: #0077b6;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+    main section p,
+    main section ul {
       font-size: 1rem;
+      color: #444;
     }
-
-    ul {
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
+    main section ul {
+      list-style-type: disc;
+      margin-left: 20px;
     }
-
-    li {
-      margin-bottom: 0.5rem;
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #e0e0e0;
+      color: #555;
+      font-size: 0.9rem;
     }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 1rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      p, li {
-        font-size: 0.9rem;
-      }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero .subtitle { font-size: 1rem; }
+      main section { padding: 20px; }
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>ALDOUS ARVIN F. NGO</h1>
-    <img src="./NGOALDOUSARVINF_PIC (1).jpg" height="150" width="150" alt="Profile Picture" />
-    <p><strong>ADDRESS:</strong> 121 V. Cruz Street, Barangay 170 Malibay, Pasay City, Philippines</p>
-    <p><strong>CONTACT:</strong> 09297489387 / 09069503819</p>
-    <p><strong>EMAIL:</strong> aldousngo30@gmail.com</p>
 
-    <hr />
-
-    <div class="section">
-      <h2>CAREER OBJECTIVE</h2>
-      <p>I want a highly rewarding career where I can use my skills and knowledge to help the company and my coworkers to be successful.</p>
+  <header class="hero">
+    <div class="container">
+      <h1>John Doe</h1>
+      <p class="subtitle">Aspiring Professional | Resume</p>
     </div>
+  </header>
 
-    <div class="section">
-      <h2>SKILLS</h2>
+  <main class="container">
+    <section>
+      <h2>Education</h2>
+      <p>Put your education details here exactly like in your original site.</p>
+    </section>
+
+    <section>
+      <h2>Honors & Awards</h2>
       <ul>
-        <li>Adobe Creative Suite (Photoshop, Flash CS6)</li>
-        <li>HTML, CSS, JavaScript, Node.js, Python</li>
-        <li>Microsoft Office Suite</li>
-        <li>E-commerce Platforms: Lazada, Shopee, TikTok, Shopify, Magento</li>
+        <li>Best in Academic Excellence</li>
+        <li>Dean’s Lister</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>PERSONAL SKILLS</h2>
+    <section>
+      <h2>Organization Affiliations</h2>
       <ul>
-        <li>Time management</li>
-        <li>Motivated and fast learner</li>
-        <li>Independent and self-sufficient</li>
-        <li>Team collaboration</li>
+        <li>ICT Organization Member</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>EDUCATION</h2>
-      <ul>
-        <li>2013–2018: Baliuag University (4th Year BSIT)</li>
-        <li>2010–2013: Bulacan College Of Computer Science Inc. (High School)</li>
-        <li>2004–2009: Bulacan College Of Computer Science Inc. (Elementary)</li>
-      </ul>
-    </div>
+    <section>
+      <h2>Education Program Goals</h2>
+      <p>To develop graduates who are effective in the workplace...</p>
+    </section>
 
-    <div class="section">
-      <h2>CERTIFICATES</h2>
+    <section>
+      <h2>Fields of Specialization</h2>
       <ul>
-        <li>Microsoft Developing Windows 10 Games with Construct 2</li>
-        <li>Microsoft Building Blocks Game Development</li>
-        <li>Microsoft Virtual Augmented Reality</li>
-        <li>SAP 2015</li>
-        <li>Introduction to .NET Core</li>
+        <li>Web Development</li>
+        <li>Database Management</li>
+        <li>Multimedia Systems</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>WORK EXPERIENCE</h2>
-      <ul>
-        <li><strong>BU Center for Instructional and Technology Services</strong> (OJT - 2018)</li>
-        <li><strong>Techwithin Marketing Services (Converge Agency)</strong> – IT Staff (2018–2019)</li>
-        <li><strong>Wilcon Depot Libis QC</strong> – E-commerce Staff / Data Analyst / Encoder (2021–2023)</li>
-        <li><strong>Lica Land Homevibe</strong> – E-commerce Operations Specialist (2023–2024)</li>
-        <li><strong>MINISO PHILIPPINES</strong> – E-commerce Supervisor (2025–Present)</li>
-      </ul>
-    </div>
+    <section>
+      <h2>Background</h2>
+      <p>This resume is made to present my background, skills, and other information for future job opportunities.</p>
+    </section>
+  </main>
 
-    <div class="section">
-      <h2>PERSONAL INFORMATION</h2>
-      <ul>
-        <li>Gender: Male</li>
-        <li>Age: 28</li>
-        <li>Birthdate: November 30, 1996</li>
-        <li>Civil Status: Single</li>
-        <li>Citizenship: Filipino</li>
-        <li>Height: 5'7"</li>
-        <li>Weight: 90kg</li>
-        <li>Religion: Catholic</li>
-        <li>Languages: Tagalog, English</li>
-        <li>Mother: Noemi F. Ngo</li>
-        <li>Father: Ferdinand D. Ngo</li>
-      </ul>
-    </div>
+  <footer>
+    <p>© 2025 John Doe. All rights reserved.</p>
+  </footer>
 
-    <div class="section">
-      <h2>QUALIFICATIONS</h2>
-      <ul>
-        <li>Dedicated and hardworking</li>
-        <li>Willing to work overtime</li>
-        <li>Open to day/night shifts</li>
-        <li>Excellent written and communication skills</li>
-      </ul>
-    </div>
-  </div>
 </body>
-
 </html>
